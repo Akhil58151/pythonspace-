@@ -1,0 +1,72 @@
+*{
+    border: 0rem;
+    margin: 0rem;
+    padding: 0rem;
+    background-color: black;
+    color: white;
+    font-family: 'Almost Japanese Smooth';
+    font-weight: 0.5rem;
+}
+
+.headingbox{
+    display: inline-flex;
+    box-sizing: content-box;
+    padding-left: 5rem;
+    align-items: center;
+    text-align: center;
+    align-content: space-between;
+
+}
+
+.heading{
+    text-align: center;
+    padding-right: 50rem;
+}
+
+ul{
+    text-align: right;
+    display: inline-flex;
+}
+
+li{
+    padding-left: 1rem;
+    box-sizing: border-box;
+    
+}
+
+#slider {
+    width: 100rem;
+    height: 50rem;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    padding-left: 10rem;
+}
+#slider img {
+    position: absolute;
+    width: 100rem;
+    height: 50rem;
+    align-items: center;
+    animation: slide 12s infinite;
+    opacity: 0;
+}
+#slider img:nth-child(1) {
+    animation-delay: 0s;
+}
+#slider img:nth-child(2) {
+    animation-delay: 4s;
+}
+#slider img:nth-child(3) {
+    animation-delay: 8s;
+}
+@keyframes slide {
+    0% {opacity: 0;}
+    8% {opacity: 1;}
+    33% {opacity: 1;}
+    41% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.slider{
+    align-self: center;
+}
